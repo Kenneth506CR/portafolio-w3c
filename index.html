@@ -3,29 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./index.css" />
     <title>Portafolio|Kenneth Rodriguez</title>
   </head>
+
   <body>
-    <header>
-      <h1>Header</h1>
+    <header class="header-container">
+      <h1>Kenneth Rodriguez Carvajal</h1>
+      <a href="#formulario">Contactar</a>
     </header>
+
+    <nav class="nav-container">
+      <ul>
+        <li>
+          <a href="">Sobre mi</a>
+        </li>
+        <li>
+          <a href="">Formacion</a>
+        </li>
+        <li>
+          <a href="">Cursos</a>
+        </li>
+        <li>
+          <a href="">Habilidades</a>
+        </li>
+        <li>
+          <a href="">Proyectos</a>
+        </li>
+        <li>
+          <a href="">Contacto</a>
+        </li>
+        <li>
+          <a href="">Preguntas</a>
+        </li>
+      </ul>
+    </nav>
 
     <article>
       <h2>Sobre mi</h2>
-      <p>
-        Soy un joven entusiasta del desarrollo web, en especial por el
-        desarrollo Front End aunque en algun momento me gustaria tarbien
-        dedicarle tiempo al backend.
-      </p>
-      <img
-        src="https://github.com/Kenneth506CR.png"
-        alt="Foto ilustrativa del dueno del portafolio"
-        title="Foto de Kenneth"
-      />
+      <div class="sobreMi-contenido">
+        <p>
+          Soy un joven entusiasta del desarrollo web, en especial por el
+          desarrollo Front End aunque en algun momento me gustaria tarbien
+          dedicarle tiempo al backend.
+        </p>
+        <img
+          src="https://github.com/Kenneth506CR.png"
+          alt="Foto ilustrativa del dueno del portafolio"
+          title="Foto de Kenneth"
+        />
+      </div>
     </article>
 
     <main>
-      <section>
+      <section class="formaciones-container">
         <h2>Formacion</h2>
         <ul>
           <li>
@@ -51,7 +82,7 @@
         </ul>
       </section>
 
-      <section>
+      <section class="cursos-container">
         <h2>Cursos</h2>
         <ul>
           <li>
@@ -70,7 +101,7 @@
         </ul>
       </section>
 
-      <section>
+      <section class="experiencias-container">
         <h2>Experiencia</h2>
         <div>
           <h3>Altiva Soluciones S.A | Junio 2023- Diciembre-2023</h3>
@@ -108,7 +139,7 @@
         </div>
       </section>
 
-      <section>
+      <section class="proyectos-container">
         <h2>Proyectos</h2>
         <div>
           <h3>Recetas</h3>
@@ -130,107 +161,102 @@
           <button>Ver Detalles</button>
         </div>
       </section>
-
-      <aside>
-        <header><h3>Informacion adicional</h3></header>
-        <div>
-          <h4>Habilidades Blandas</h4>
-          <ul>
-            <li>Trabajo en equipo</li>
-            <li>Resolucion de problemas</li>
-            <li>Comunicacion asertiva</li>
-            <li>Empatia</li>
-            <li>Pensamiento critico</li>
-          </ul>
-        </div>
-
-        <div>
-          <h4>Habilidades Tecnicas</h4>
-          <ul>
-            <li>HTML-Avanzado</li>
-            <li>CSS-Avanzado</li>
-            <li>Java Script-Intermedio</li>
-            <li>React-Intermedio</li>
-            <li>Angular-Basico(version 17)</li>
-            <li>Node Js-Intermedio</li>
-            <li>MongoDB-Basico</li>
-            <li>SqlServer-Basico</li>
-            <li>Githud-Intermedio</li>
-            <li>Scrum-Basico</li>
-            <li>C++-Basico(POO)</li>
-            <li>TypeScript-Basico</li>
-          </ul>
-          <h5>Idiomas</h5>
-          <ul>
-            <li>Espanol-Nativo</li>
-            <li>Ingles-Basico</li>
-          </ul>
-        </div>
-
-        <div>
-          <h4>Herramientas</h4>
-          <ul>
-            <li>Visual Studio Code</li>
-            <li>visual Studio 2022</li>
-            <li>Postman</li>
-            <li>Jira</li>
-            <li>Trello</li>
-            <li>Figma</li>
-            <li>GitHud</li>
-            <li>Netlify</li>
-            <li>Android Studio</li>
-            <li>SourceTree</li>
-          </ul>
-        </div>
-      </aside>
-
-      <section>
-        <h2>Formulario</h2>
-        <form>
-          <fieldset>
-            <legend>Información personal</legend>
-            <div>
-              <label for="nombre">Nombre:</label>
-              <input type="text" id="nombre" name="nombre" required />
-            </div>
-            <div>
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-            <div>
-              <label for="telefono">Teléfono:</label>
-              <input type="tel" id="telefono" name="telefono" required />
-            </div>
-          </fieldset>
-          <fieldset>
-            <legend>Mensaje</legend>
-            <div>
-              <label for="descripcion">Descripción:</label>
-              <textarea id="descripcion" name="descripcion"></textarea>
-            </div>
-          </fieldset>
-          <button type="submit">Enviar</button>
-        </form>
-      </section>
-
-      <section>
-        <h2>Preguntas Frecuentes</h2>
-        <details>
-          <summary>Que te gusta mas, React o Angular?</summary>
-          <p>
-            Los dos me parecen muy intresantes anque me sineto mas comodocon
-            React, Angular tiene muy buenas cosas con la ultima version que
-            agrego.
-          </p>
-        </details>
-        <details>
-          <summary>
-            Cuando termino la carrera de ingenieria en sistemas?
-          </summary>
-          <p>En el ano 2023 aunque la gruadacion en el 2024</p>
-        </details>
-      </section>
     </main>
+
+    <aside>
+      <header><h3>Informacion adicional</h3></header>
+      <div>
+        <h4>Habilidades Blandas</h4>
+        <ul>
+          <li>Trabajo en equipo</li>
+          <li>Resolucion de problemas</li>
+          <li>Comunicacion asertiva</li>
+          <li>Empatia</li>
+          <li>Pensamiento critico</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Habilidades Tecnicas</h4>
+        <ul>
+          <li>HTML-Avanzado</li>
+          <li>CSS-Avanzado</li>
+          <li>Java Script-Intermedio</li>
+          <li>React-Intermedio</li>
+          <li>Angular-Basico(version 17)</li>
+          <li>Node Js-Intermedio</li>
+          <li>MongoDB-Basico</li>
+          <li>SqlServer-Basico</li>
+          <li>Githud-Intermedio</li>
+          <li>Scrum-Basico</li>
+          <li>C++-Basico(POO)</li>
+          <li>TypeScript-Basico</li>
+        </ul>
+        <h5>Idiomas</h5>
+        <ul>
+          <li>Espanol-Nativo</li>
+          <li>Ingles-Basico</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Herramientas</h4>
+        <ul>
+          <li>Visual Studio Code</li>
+          <li>visual Studio 2022</li>
+          <li>Postman</li>
+          <li>Jira</li>
+          <li>Trello</li>
+          <li>Figma</li>
+          <li>GitHud</li>
+          <li>Netlify</li>
+          <li>Android Studio</li>
+          <li>SourceTree</li>
+        </ul>
+      </div>
+    </aside>
+
+    <form>
+      <fieldset>
+        <legend>Información personal</legend>
+        <div>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" required />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Mensaje</legend>
+        <div>
+          <label for="descripcion">Descripción:</label>
+          <textarea id="descripcion" name="descripcion"></textarea>
+        </div>
+      </fieldset>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <section class="preguntas-container">
+      <h2>Preguntas Frecuentes</h2>
+      <details>
+        <summary>Que te gusta mas, React o Angular?</summary>
+        <p>
+          Los dos me parecen muy intresantes anque me sineto mas comodocon
+          React, Angular tiene muy buenas cosas con la ultima version que
+          agrego.
+        </p>
+      </details>
+      <details>
+        <summary>Cuando termino la carrera de ingenieria en sistemas?</summary>
+        <p>En el ano 2023 aunque la gruadacion en el 2024</p>
+      </details>
+    </section>
 
     <footer>
       <h1>Footer</h1>
