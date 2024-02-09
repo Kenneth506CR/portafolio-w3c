@@ -1,10 +1,12 @@
 body {
+  font-family: "Roboto", sans-serif;
   display: grid;
   grid-template-areas:
     "header header header header"
     "nav nav nav nav"
     "article article article article"
     "main main main aside"
+    "proyectos proyectos proyectos proyectos"
     "form form preguntas preguntas"
     "footer footer footer footer";
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -87,11 +89,25 @@ main {
 .formaciones-container {
   width: 50%;
   background-color: aliceblue;
+  text-align: center;
+}
+
+.formaciones-container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .cursos-container {
   width: 50%;
   background-color: blueviolet;
+  text-align: center;
+}
+
+.cursos-container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .experiencias-container {
@@ -99,14 +115,56 @@ main {
   background-color: brown;
 }
 
-.proyectos-container {
-  width: 100%;
-  background-color: yellow;
+.experiencias-container h2 {
+  text-align: center;
 }
 
 aside {
   grid-area: aside;
   background-color: rgb(23, 209, 23);
+  text-align: center;
+}
+
+aside ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.proyectos-container {
+  grid-area: proyectos;
+  background-color: yellow;
+  padding: 0.5rem;
+}
+
+.proyectos-container h2 {
+  text-align: center;
+}
+
+.box-proyectos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card-proyecto {
+  background-color: #fff;
+  width: 550px;
+  height: 400px;
+  text-align: center;
+}
+
+.card-proyecto img {
+  width: 100px;
+  height: auto;
+}
+
+.card-proyecto ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 form {
